@@ -34,7 +34,7 @@ const Flexifit = require("react-flexifit-ts").default;
 ## Usage
 
 ### aspectRatio
-```
+```js
 <Flexifit aspectRatio={1.5} >
   <iframe src="https://www.youtube.com/embed/1g6QJ5TfA7w"/>
 </Flexifit>
@@ -43,7 +43,7 @@ const Flexifit = require("react-flexifit-ts").default;
 Flexifit will ensure it's child element maintains the specified aspectRatio no matter the screen size.
 
 ### height/width
-```
+```js
 <Flexifit height={200} width={250} >
   <iframe src="https://www.youtube.com/embed/1g6QJ5TfA7w"/>
 </Flexifit>

@@ -5,10 +5,10 @@ import { Component, Children, cloneElement } from 'react';
 const isPositiveFinite = (num) => (num > 0) && Number.isFinite(num);
 
 export interface IProps extends React.Props<any> {
-	aspectRatio: number;
-	width: number;
-	height: number;
-	throttle: number;
+	aspectRatio?: number;
+	width?: number;
+	height?: number;
+	throttle?: number;
 }
 
 export interface IState {

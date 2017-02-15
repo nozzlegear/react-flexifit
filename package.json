@@ -1,43 +1,38 @@
 {
-  "name": "react-flexifit",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "name": "react-flexifit-ts",
+  "version": "1.0.0",
+  "description": "A React component to make non-responsive elements, (such as iframes, canvas, etc) or components responsive, with full TypeScript definitions. Based off of https://github.com/LeisureLink-FE/react-flexifit.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "babel-node test.js | tap-spec",
+    "build": "tsc -p .",
+    "test": "npm run build && node test.js | tap-spec",
     "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeisureLink-FE/react-drawer.git"
+    "url": "git+https://github.com/nozzleger/react-flexifit.git"
   },
-  "author": "Cory Brown <oh.wise.man@gmail.com",
+  "author": "Joshua Harms <joshua@nozzlegear.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LeisureLink-FE/react-drawer/issues"
+    "url": "https://github.com/nozzleger/react-flexifit/issues"
   },
-  "homepage": "https://github.com/LeisureLink-FE/react-drawer#readme",
+  "homepage": "https://github.com/nozzleger/react-flexifit#readme",
   "dependencies": {
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "react": "^15.1.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-eslint": "^6.0.4",
-    "babel-plugin-react-require": "^2.1.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-2": "^6.5.0",
+    "@types/lodash": "^4.14.52",
+    "@types/node": "^7.0.5",
+    "@types/react": "^15.0.9",
+    "@types/react-dom": "^0.14.23",
     "enzyme": "^2.3.0",
-    "eslint": "^2.11.1",
-    "eslint-plugin-react": "^5.1.1",
     "jsdom": "^9.2.1",
-    "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1"
-  },
-  "peerDependencies": {
-    "react": "^15.1.0"
   }
 }

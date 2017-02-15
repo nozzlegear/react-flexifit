@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
-    "test": "npm run build && node test.js | tap-spec",
+    "test": "npm run build && node dist/test.js | tap-spec",
     "prepublish": "npm test"
   },
   "repository": {

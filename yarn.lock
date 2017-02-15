@@ -2,6 +2,17 @@
 # yarn lockfile v1
 
 
+"@types/cheerio@*":
+  version "0.17.31"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.17.31.tgz#bfeda3e3e8647a6e49b2998d137c81d5d8ab52d0"
+
+"@types/enzyme@^2.7.4":
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-2.7.4.tgz#62ac5bb7e46703ac8bd427f24d67586d67449321"
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
+
 "@types/lodash@^4.14.52":
   version "4.14.52"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.52.tgz#de5c7ab14da1289733233c9b0ec6f9e377db90f5"

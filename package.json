@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nozzleger/react-flexifit#readme",
   "dependencies": {
+    "@types/enzyme": "^2.7.4",
     "lodash": "^4.13.1",
     "react": "^15.1.0"
   },

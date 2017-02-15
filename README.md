@@ -51,6 +51,15 @@ Flexifit will ensure it's child element maintains the specified aspectRatio no m
 
 Flexifit will calculate the appropriate aspect ratio and maintain that calculated aspectRatio.
 
+### throttle
+```js
+<Flexifit aspectRation={1.5} throttle={500}>
+  <iframe src="https://www.youtube.com/embed/1g6QJ5TfA7w"/>
+</Flexifit>
+```
+
+Throttle controls how often (in milliseconds) Flexifit reflows the child element during window resize. Defaults to `100` milliseconds.
+
 ## Considerations
 
 * Flexifit will throw if anything other than one child is provided.

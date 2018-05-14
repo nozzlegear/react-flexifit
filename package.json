@@ -1,6 +1,6 @@
 {
   "name": "react-flexifit-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component to make non-responsive elements, (such as iframes, canvas, etc) or components responsive, with full TypeScript definitions. Based off of https://github.com/LeisureLink-FE/react-flexifit.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

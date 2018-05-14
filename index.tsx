@@ -29,12 +29,12 @@ export default class FlexiFrame extends Component<IProps, IState> {
 			flexer = Children.only(children);
 		} catch (e) {
 			const message = [
-				`It looks as though you tried to include more than one child to Flexifit.`,
-				`Flexifit can only manage one non-responsive element at a time.`,
-				`Try wrapping additional non-responsive elements in their own Flexifit component.`,
+				"It looks as though you tried to include more than one child to Flexifit.",
+				"Flexifit can only manage one non-responsive element at a time.",
+				"Try wrapping additional non-responsive elements in their own Flexifit component.",
 			];
 			
-			throw message.join(` `);
+			throw message.join(" ");
 		}
 
 		const { style, ...flexerProps } = flexer.props;
@@ -79,7 +79,7 @@ export default class FlexiFrame extends Component<IProps, IState> {
 	render() {
 		const { width, ratio } = this.state;
 		const height = (width || 1) / ratio;
-		const style: React.CSSProperties = {width: "100%", height: `${height}px`, position: `relative`};
+		const style: React.CSSProperties = {width: "100%", height: height + "px", position: "relative"};
 
 		return (
 			<div style={style} ref={(f) => this.flexWrapper = f}>

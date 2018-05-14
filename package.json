@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -p .",
     "test": "npm run build && node dist/test.js | tap-spec",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
